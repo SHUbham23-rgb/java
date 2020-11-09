@@ -1,33 +1,33 @@
 package com.company;
+
 import java.util.Scanner;
+
 public class Main {
-
     public static void main(String[] args) {
-        int i =0, j=1,sum = 0,avg = 0;
-        Scanner s = new Scanner(System.in);
-        int[] array = new int[5];
-        for (i=0;i<5;i++)
-        {
-            System.out.println("Enter marks of subject:"+j++ );
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter the first number:");
+        int n1 = scan.nextInt();
+        System.out.println("enter the second number:");
+        Scanner scan1 = new Scanner(System.in);
+        int n2 = scan1.nextInt();
+        Scanner scan3 = new Scanner(System.in);
+        int n3 = scan3.nextInt();
 
-            array[i] =s.nextInt();
-            sum = sum + array[i];
-        }
-        avg = sum / 5;
-        if ( sum >= 80 )
+        if (n1 == n2 == n3)
         {
-            System.out.println("GRADE A");
-        } else if  (sum < 80  && sum >= 60)
-        {
-            System.out.println("GRADE B");
-        }else if ( sum <60  && sum >= 40)
-        {
-            System.out.println("GRADE C");
+            System.out.println("the numbers entered are equal");
 
-        }else
-        {
-            System.out.println("GRADE D");
         }
+        else if (n1!=n2!=n3)
+        {
+            System.out.println(" the numbers entered is different");
+        }
+
+
+
+
+
+
 
 
 
